@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141414;
+    color: #fff;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.netflix-logo{
+    width: 120px;
+    margin-right: 130px;
+}
+
+.names{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first-name{
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.name{
+    margin-left: 15px;
+    color: #E5E5E5;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.name:hover,
+.first-name:hover{
+    color:  #E50914;
+}
+
+.user-side{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0%;
+}
+
+.header-icon{
+    width: 13px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.only-text{
+    font-size: 12px;
+    margin-right: 12px;
+}
+
+.first-section{
+    background-image: url('images/MoviePoster.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #100f0f;
+}
+
+.first-section-text{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.movie-name{
+    width: 250px;
+}
+
+.top-badge{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.rating-text{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.text-text{
+    width: 400px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.play{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid;
+    padding: 7px 17px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: #000;
+}
+
+.play-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid;
+    padding: 5px 7px;
+    background-color: transparent;
+    padding: 7px 17px;
+}
+
+.play-icons{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.text-header-section1{
+    margin-bottom: 7px;
+    color: #E5E5E5;
+}
+
+.first-section-hot-movies{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+}
+
+
+.movie-poster-1{
+    width: 160px;
+}
+
+.first-section-movies{
+    margin-top: 10px;
+}
+
+.second-section{
+    padding: 5px 65px;
+}
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 375px) {
+    .first-section{
+        width: 100%;
+        height: 508px;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    .first-section {
+        width: 100%;
+        height: 480px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .first-section {
+        width: 100%;
+        height: 512px;
+        background-size: cover;
+
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    .first-section {
+        width: 100%;
+        height: 700px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .first-section {
+        width: 100%;
+        height: 700px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+   */

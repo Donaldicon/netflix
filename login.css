@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/image2.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #100f0f;
+}
+
+main{
+    max-width: 350px;
+}
+
+.header{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+}
+
+.netflix-logo{
+    width: 120px;
+}
+
+#background{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+#password{
+    background-color: #333333;
+    display: block;
+    border: none;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 12px;
+    outline: none;
+}
+
+.email-or-phone-number{
+    background-color: #333333;
+    display: block;
+    border: none;
+    width: 300px;
+    margin-bottom: 10px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 12px;
+    outline: none;
+}
+
+#password::placeholder,
+.email-or-phone-number::placeholder{
+    color: #8c8c8c;
+}
+
+.sign-in{
+    display: block;
+    margin-top: 30px;
+    width: 300px;
+    height: 40px;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sign-in:hover{
+    opacity: 0.7;
+}
+
+#remember-me-checkbox{
+    display: inline-block;
+    text-align: center;
+}
+
+.inline{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.in{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.remember{
+    margin-left: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #737373;
+}
+
+.need-help{
+    font-size: 13px;
+    cursor: pointer;
+    display: inline-block;
+    color: #737373;
+}
+
+.facebook{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.facebook-image{
+    width: 16px;
+}
+
+.facebook-login{
+    font-size: 12px;
+    color: #737373;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.new-to-netflix{
+    color: #737373;
+    font-size: 13px;
+}
+
+.sign-up{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.captcha{
+    width: 300px;
+    font-size: 12px;
+    color: #737373;
+}
+
+.background-two{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 150px;
+    display: flex;
+    flex-direction: column;
+}
+.question{
+    display: block;
+    color: #757575;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    outline: none;
+}
+
+.grid-item {
+    width: calc(100% / 4);
+    color: #757575;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 20px; 
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.grid-item:hover{
+    color: #E50914;
+}
+
+.langs{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid #333333;
+    padding: 2px;
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.langs:hover{
+    border-color: #E50914;
+}
+
+.earth-sign{
+    width: 20px;
+}
+
+.lang-name{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #999999;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.lang-name:hover{
+    color: #E50914;
+}
+
+.down-arrow{
+    width: 16px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 375px) {
+    body{
+        width: 100%;
+        height: 508px;
+        background-image: none;
+        background-color: #000;
+    }
+}
+@media screen and (max-width: 425px) {
+    body {
+        width: 100%;
+        height: 480px;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 512px;
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+        height: 700px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    body {
+        width: 100%;
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .header{
+        position: absolute;
+        top: 3%;
+        left: 35%;
+    }
+    .items-list-one{
+        display: flex;
+        flex-direction: column;
+    }
+    .background-two{
+        padding: 5px 15px;
+    }
+}

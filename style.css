@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: #000;
+   box-sizing: border-box;
+   margin: 0 auto;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    background-image: url('images/image1.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.netflix-logo{
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.language-selector{
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 130px;
+}
+
+.language-selector:hover{
+    border-color: #E50914;
+}
+
+.earth-sign{
+    width: 20px;
+}
+
+.language-name{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.language-name:hover{
+    color: #E50914;
+}
+
+.down-arrow{
+    width: 16px;
+}
+
+
+.signin-btn{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background-color: #E50914;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.signin-btn:hover{
+    color: #E50914;
+    background-color: #fff;
+}
+
+.header-texts{
+    width: 500px;
+    padding: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    font-size: 35px;
+}
+
+.watch-cancel{
+    margin-top: 12px;
+}
+
+.enter-email{
+    margin-top: 25px;
+    font-size: 11px;
+}
+
+#email-address{
+    width: 270px;
+    color: black;
+    outline: none;
+    padding: 10px;
+    border: none;
+    transition: placeholder-top 0.3s ease;
+}
+
+#email-address::placeholder{
+    color: #8c8c8c;
+    font-size: 12px;
+}
+
+#email-address:focus::placeholder {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#one{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.get-started-btn{
+    background-color: #E50914;
+    font-size: 15px;
+    border: none;
+    padding: 9px 15px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.get-started-btn:hover{
+    opacity: 0.7;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: #222222;
+}
+
+.first-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    width: 600px;
+    margin: 20px auto;
+}
+
+.first-section-text{
+    width: 280px;
+    margin-left: 30px;
+}
+
+.first-section-text-paragraph{
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.first-section-image{
+    width: 300px;
+}
+
+.second-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    width: 600px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.second-section-image{
+    width: 300px;
+}
+
+.second-second-section-image{
+    width: 250px;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+}
+
+.third-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    width: 600px;
+    margin: 20px auto;
+}
+
+.fourth-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    width: 600px;
+    margin: 20px auto;
+}
+
+.fifth-section{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.fifth-section-header{
+    margin-bottom: 30px;
+}
+
+.frequent-questions{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    width: 400px;
+    height: 36px;
+    padding: 10px;
+    background-color: #303030;
+    outline: none;
+}
+
+.the-frequent-questions{
+    font-size: 14px;
+}
+
+.add-sign{
+    width: 14px;
+    cursor: pointer;
+}
+
+.ready-to-watch{
+    font-size: 11px;
+    margin-top: 30px;
+}
+
+.footer{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    outline: none;
+}
+
+.calls{
+    color: #757575;
+    font-size: 13px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    outline: none;
+}
+
+.grid-item {
+    width: calc(100% / 4);
+    height: 100px; 
+    color: #757575;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 100px; 
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.grid-item:hover{
+    color: #E50914;
+}
+
+.langs{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid #333333;
+    padding: 10px;
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.langs:hover{
+    border-color: #E50914;
+}
+
+.earth-sign{
+    width: 20px;
+}
+
+.lang-name{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #999999;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.lang-name:hover{
+    color: #E50914;
+}
+
+.down-arrow{
+    width: 16px;
+}
+
+.netflix-india{
+    font-size: 10px;
+    color: #757575;
+    margin-top: 30px;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 375px) {
+    .header{
+        width: 100%;
+        height: 508px;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    .header {
+        width: 100%;
+        height: 480px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        height: 512px;
+        background-size: cover;
+
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    .header {
+        width: 100%;
+        height: 700px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .header {
+        width: 100%;
+        height: 700px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    body{
+        margin: 0 auto;
+    }
+    .header {
+        width: 100%;
+        height: 100vh;
+    }
+    .netflix-logo{
+        width: 90px;
+    }
+    .language-selector{
+        width: 80px;
+        position: absolute;
+        top: 20px;
+        right: 90px;
+    }
+    .earth-sign{
+        width: 9px;
+    }
+    
+    .language-name{
+        font-size: 9px;    
+    }
+    .down-arrow{
+        width: 9px;
+    }
+    .signin-btn{
+        font-size: 10px;
+        padding: 8px 9px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .header-texts{
+        width: 250px;
+        margin-top: 20px;
+    }
+    
+    h1{
+        font-size: 12px;
+    }
+    .watch-cancel{
+        font-size: 9px;
+    }
+    
+    .enter-email{
+        margin-top: 8px;
+        font-size: 7px;
+    }
+    
+    #email-address{
+        width: 150px;
+        height: 20px;
+    }
+    
+    #email-address::placeholder{
+        font-size: 10px;
+    }
+    
+    #one{
+        display: flex;
+        justify-content: center;
+        margin-top: 7px;
+    }
+    
+    .get-started-btn{
+        font-size: 10px;
+        padding: 3px 7px;
+        font-size: 5px;
+    }
+    .watch-cancel{
+        margin-top: 8px;
+    }
+    
+    .grid-item {
+        width: calc(100% / 2);
+    }
+    .header-texts{
+        width: 300px;
+    }
+
+    .second-section{
+        position: relative;
+    }
+
+    .second-second-section-image{
+        width: 200px;
+        position: absolute;
+        bottom: 25%;
+        left: 10%;
+    }
+    .first-section-text-paragraph{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    h2{
+        font-size: 13px;
+    }
+
+    .ready-to-watch{
+        font-size: 7px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .fifth-section-header{
+        font-size: 13px;
+    }
+    
+    .the-frequent-questions{
+        font-size: 10px;
+    }
+    
+    .add-sign{
+        width: 12px;
+        cursor: pointer;
+    }
+
+    .frequent-questions{
+        width: 250px;
+    }
+    .first-section,
+    .second-section,
+    .third-section,
+    .fourth-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
+
+    .first-section-text{
+        text-align: center;
+    }
+
+    .fifth-section{
+        width: 250px;
+        margin: 20px auto;
+    }
+    .grid-item {
+        width: calc(100% / 2);
+        height: auto;
+    }
+    .langs{
+        width: 80px;
+    }
+    .lang-name{
+        font-size: 9px;  
+    }
+    .earth-sign{
+        width: 9px;
+    }
+    .down-arrow{
+        width: 9px;
+    }
+    
+    .netflix-india{
+        font-size: 10px;
+        color: #757575;
+        margin-top: 30px;
+    }
+}
