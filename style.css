@@ -449,7 +449,7 @@ hr{
     
     #email-address{
         width: 150px;
-        height: 20px;
+        height: 21px;
     }
     
     #email-address::placeholder{
@@ -459,12 +459,13 @@ hr{
     #one{
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 7px;
     }
     
     .get-started-btn{
         font-size: 10px;
-        padding: 3px 7px;
+        padding: 8px 7px;
         font-size: 5px;
     }
     .watch-cancel{
