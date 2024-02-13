@@ -1,6 +1,6 @@
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
-const slides = document.querySelector('.slides');
+const slides = document.querySelector('.the-hot-movies');
 
 let slideIndex = 0;
 

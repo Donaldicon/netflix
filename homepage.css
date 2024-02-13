@@ -8,6 +8,7 @@
 body{
     background-color: #141414;
     color: #fff;
+    margin: 0 auto;
 }
 
 .header{
@@ -136,31 +137,127 @@ body{
     margin-right: 10px;
 }
 
-.text-header-section1{
-    margin-bottom: 7px;
-    color: #E5E5E5;
-}
-
 .first-section-hot-movies{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 0%;
-    left: 5%;
+    flex-wrap: wrap;
+    padding-top: 570px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
+.text-header-section1{
+    color: #E5E5E5;
+}
+
+.hot{
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.the-hot-movies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .movie-poster-1{
-    width: 160px;
-}
-
-.first-section-movies{
+    width: 180px;
+    margin-right: 7px;
     margin-top: 10px;
 }
 
-.second-section{
-    padding: 5px 65px;
+.first-section-movies{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
 }
+.footer{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    outline: none;
+}
+
+.calls{
+    color: #757575;
+    font-size: 13px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    outline: none;
+}
+
+.grid-item {
+    width: calc(100% / 4);
+    height: 100px; 
+    color: #757575;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 100px; 
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.grid-item:hover{
+    color: #E50914;
+}
+
+.langs{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid #333333;
+    padding: 10px;
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.langs:hover{
+    border-color: #E50914;
+}
+
+.earth-sign{
+    width: 20px;
+}
+
+.lang-name{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #999999;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.lang-name:hover{
+    color: #E50914;
+}
+
+.down-arrow{
+    width: 16px;
+}
+
+.netflix-india{
+    font-size: 10px;
+    color: #757575;
+    margin-top: 30px;
+}
+
+
+
 
 
 
@@ -186,8 +283,6 @@ body{
     .first-section {
         width: 100%;
         height: 512px;
-        background-size: cover;
-
     }
     
 }
@@ -202,52 +297,106 @@ body{
         width: 100%;
         height: 700px;
     }
+    .footer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+}
+@media screen and (max-width: 1023px) {
+    .hot{
+        width: 760px;
+        margin: 0 auto;
+    }
+    .first-section-hot-movies{
+        padding-top: 420px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .movie-poster-1{
+        width: 220px;
+        margin-right: 7px;
+    }
+    .first-section{
+        font-size: 13px;
+    }
+    .first-section-text{
+        top: 20%;
+    }
+    .netflix-logo{
+        margin-right: 50px;
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-/* .slider {
-    position: relative;
-    width: 100%;
-    max-width: 600px; 
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .slides {
-    display: flex;
-  }
-  
-  .slides img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .prev-btn,
-  .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .prev-btn {
-    left: 0;
-  }
-  
-  .next-btn {
-    right: 0;
-  }
-   */
+@media screen and (max-width: 767px) {
+    .hot{
+        width: 410px;
+    }
+    .first-section-hot-movies{
+        padding-top: 405px;
+    }
+    .movie-poster-1{
+        width: 150px;
+        margin-right: 7px;
+    }
+    .first-section{
+        font-size: 13px;
+    }
+    .netflix-logo{
+        margin-bottom: 20px;
+    }
+    .footer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-side{
+        bottom: 5%;
+        right: 30%;
+    }
+    .names{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 424px) {
+    .hot{
+        width: 310px;
+    }
+    .first-section-hot-movies{
+        padding-top: 487px;
+    }
+    .movie-poster-1{
+        width: 100px;
+        margin-right: 7px;
+    }
+    .first-section{
+        font-size: 13px;
+    }
+    .netflix-logo{
+        margin-bottom: 20px;
+    }
+    .footer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-side{
+        bottom: 5%;
+        right: 25%;
+    }
+    .names{
+        margin-bottom: 30px;
+    }
+    .text-text{
+        width: 300px;
+    } .grid-item {
+        width: calc(100% / 2);
+        height: auto;
+    }
+}
