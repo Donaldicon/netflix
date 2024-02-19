@@ -141,7 +141,8 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-top: 570px;
+    position: absolute;
+    bottom: 5%;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -309,9 +310,9 @@ body{
         margin: 0 auto;
     }
     .first-section-hot-movies{
-        padding-top: 420px;
-        padding-left: 30px;
-        padding-right: 30px;
+        
+    position: absolute;
+    bottom: 5%;
     }
     .movie-poster-1{
         width: 220px;
@@ -333,7 +334,9 @@ body{
         width: 410px;
     }
     .first-section-hot-movies{
-        padding-top: 405px;
+        
+    position: absolute;
+    bottom: 5%;
     }
     .movie-poster-1{
         width: 150px;
@@ -366,7 +369,9 @@ body{
         width: 310px;
     }
     .first-section-hot-movies{
-        padding-top: 487px;
+        
+    position: absolute;
+    bottom: 5%;
     }
     .movie-poster-1{
         width: 100px;
